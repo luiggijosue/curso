@@ -1,4 +1,4 @@
- body {
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
@@ -81,7 +81,7 @@ img {
   transition: 0.3s;
 }
 
-a {
+.artistas a {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
@@ -90,7 +90,7 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
+.artistas a:hover {
   background-color: darkred;
 }
 
