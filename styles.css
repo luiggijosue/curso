@@ -1,19 +1,19 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color: white;
-  margin: 0;
+body {      
+  font-family: Arial, Helvetica, sans-serif;    /*fuente para toda la pagina*/
+  background-color: black; /*fondo para toda la pantalla*/
+  color: white; /*texto blanco por defecto en todo*/
+  margin: 0; /* elimina el margen exterior que tienen los navegadores por defecto*/
 }
 
-/* CONTENEDOR */
+/* CONTENEDOR = CAJA CENTRAL QUE AGRUPA EL CONTENIDO*/
 .container {
-  max-width: 800px;
-  margin: auto;
+  max-width: 800px; /* ancho máximo: nunca pasará de 800px aunque la pantallasea más grande*/
+  margin: auto; /* margin: auto -> centra el contenido horizontalmente */
 }
 
-/* NAV */
+/* NAV = barra de navegacion  */
 nav {
-  background-color: #111;
+  background-color: #111; /* fondo gris muy oscuro*/
   padding: 10px;
   position: sticky;
   top: 0;
@@ -137,3 +137,17 @@ img {
 .bio a:hover {
   background: darkred;
 }
+
+       /* modificacion para que quede en horizontal */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px
+}
+
+/* quitar subrayado a ver en youtube y ver biografia */
+
+a {
+  text-decoration: none;
+}
+

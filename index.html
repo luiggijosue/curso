@@ -9,9 +9,12 @@
   <body>
     <div class="container">
       <nav>
-        <a href="#inicio">Home</a>
-        <a href="#artistas">Artistas</a>
-        <a href="#contacto">Contacto</a>
+        <!-- modificacion lista horizontal -->
+         <ul>
+           <li><a href="#inicio">Home</a></li>
+           <li><a href="#artistas">Artistas</a></li>
+           <li><a href="#contacto">Contacto</a></li>
+         </ul>  
       </nav>
 
       <!-- HOME -->
@@ -22,6 +25,14 @@
       <!-- ARTISTAS -->
       <h2 id="artistas">Artistas</h2>
 
+
+      <!-- modificacion orden de artistas -->
+       <ol type="1">
+        <li>Guns N' Roses</li>
+        <li>Aerosmith</li>
+        <li>Green Day</li>
+       </ol>
+
       <div class="contenedor-artistas">
         <div class="artistas">
           <h2>Guns N' Roses</h2>
@@ -29,7 +40,14 @@
             <img src="imagenes/gnr.jpeg" alt="Guns N' Roses" />
           </a>
 
-          <p>Sweet Child O' Mine.</p>
+          <!-- borro el parrafo que tenia "sweetco'm" y introduzco ul type="square"-->
+
+
+
+          <ul type="square">
+            <li>Sweet Child O' Mine</li>
+            <li>November Rain</li>
+            <li>Welcome to the Jungle</li>
           <a
             href="https://www.youtube.com/watch?v=1w7OgIMMRc4"
             target="_blank"
@@ -47,7 +65,14 @@
           <a href="aerosmith.html">
             <img src="imagenes/aeros.jpeg" alt="Aerosmith" />
           </a>
-          <p>Banda legendaria del rock.</p>
+
+          <!-- borro el parrafo que tenia "banda legendaria del rock" y introduzco ul type="square"-->
+
+          <ul type="square">
+            <li>I Don't Want to Miss a Thing</li>
+            <li>Dream On</li>
+            <li>Crazy</li>
+          </ul>
           <a
             href="https://www.youtube.com/watch?v=HaC0s-FP-r4"
             target="_blank"
@@ -65,7 +90,14 @@
           <a href="greenday.html">
             <img src="imagenes/greenday.jpeg" alt="Green Day" />
           </a>
-          <p>Banda punk rock.</p>
+
+          <!-- borro el parrafo que tenia "banda punk rock" y introduzco ul type="square"-->
+
+          <ul type="square">
+            <li>Boulevard of Broken Dreams</li>
+            <li>Wake Me Up When September Ends</li>
+            <li>American Idiot</li>
+            </ul>      
           <a
             href="https://www.youtube.com/watch?v=NUTGr5t3MoY"
             target="_blank"
@@ -81,7 +113,7 @@
 
       <!-- CONTACTO -->
       <h2 id="contacto">Contacto</h2>
-      <p>Email: luiggi.lj@icloud.com</p>
+      <p>Email: <u>luiggi.lj@icloud.com</u></p>
     </div>
   </body>
 </html>
