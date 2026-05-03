@@ -1,22 +1,53 @@
-body {      
-  font-family: Arial, Helvetica, sans-serif;    /*fuente para toda la pagina*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: url("imagenes/top1.PNG");
+  width: 100%;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "open Sans", sans-serif; /*fuente para toda la pagina*/
   background-color: black; /*fondo para toda la pantalla*/
+  background-image: url(imagenes/fondo2.jpg);
   color: white; /*texto blanco por defecto en todo*/
   margin: 0; /* elimina el margen exterior que tienen los navegadores por defecto*/
+  font-size: 18px;
+  line-height: 1.7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
 }
 
 /* CONTENEDOR = CAJA CENTRAL QUE AGRUPA EL CONTENIDO*/
 .container {
   max-width: 800px; /* ancho máximo: nunca pasará de 800px aunque la pantallasea más grande*/
   margin: auto; /* margin: auto -> centra el contenido horizontalmente */
+  padding: 0 16px;
 }
 
 /* NAV = barra de navegacion  */
 nav {
   background-color: #111; /* fondo gris muy oscuro*/
-  padding: 10px;
   position: sticky;
   top: 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -33,12 +64,16 @@ nav a:hover {
 }
 
 /* TITULO */
-h1 {
-  text-align: center;
-  margin-top: 20px;
+header h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px black;
 }
 
 /* CONTENEDOR DE ARTISTAS */
+.container p {
+  margin: 10px 0;
+}
 .contenedor-artistas {
   display: flex;
   gap: 20px;
@@ -65,6 +100,10 @@ h1 {
 .artistas h2 {
   margin-top: 0;
 }
+.artistas li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
 
 /* IMÁGENES */
 img {
@@ -81,7 +120,7 @@ img {
   transition: 0.3s;
 }
 
-.artistas a {
+.artistas a:not(.imagen-link) {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
@@ -106,13 +145,15 @@ img {
 
 .bio img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 20px 20px;
+  justify-content: center;
+  padding: auto;
 }
 
 .bio p {
-  line-height: 1.6;
+  line-height: 2;
 }
 
 .bio ul {
@@ -121,7 +162,7 @@ img {
 }
 
 .bio li {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .bio a {
@@ -138,11 +179,11 @@ img {
   background: darkred;
 }
 
-       /* modificacion para que quede en horizontal */
+/* modificacion para que quede en horizontal */
 nav ul {
   display: flex;
   list-style-type: none;
-  gap: 10px
+  gap: 20px;
 }
 
 /* quitar subrayado a ver en youtube y ver biografia */
@@ -150,4 +191,16 @@ nav ul {
 a {
   text-decoration: none;
 }
-
+footer {
+  background-color: #111;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+table {
+  background-color: #111;
+  color: red;
+  width: 100%;
+}
+td {
+  padding: 5px;
+}

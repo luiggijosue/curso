@@ -4,35 +4,37 @@
     <meta charset="utf-8" />
     <title>MI TOP 3 ARTISTAS</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   </head>
-
+  <!--AQUI EMPIEZA TODO EL CONTENIDO WEB-->
   <body>
+    <header> <h1 id="inicio">MI TOP 3 ARTISTAS FAVORITOS</h1></header>
     <div class="container">
       <nav>
         <!-- modificacion lista horizontal -->
-         <ul>
-           <li><a href="#inicio">Home</a></li>
-           <li><a href="#artistas">Artistas</a></li>
-           <li><a href="#contacto">Contacto</a></li>
-         </ul>  
+        <ul>
+          <li><a href="#inicio">Home</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
 
       <!-- HOME -->
-      <h1 id="inicio">MI TOP 3 ARTISTAS FAVORITOS</h1>
+     
       <p>Bienvenidos a mi web donde muestro mis artistas favoritos.</p>
       <p>Explora las secciones para descubrir más sobre ellos.</p>
 
       <!-- ARTISTAS -->
       <h2 id="artistas">Artistas</h2>
 
-
-      <!-- modificacion orden de artistas -->
-       <ol type="1">
-        <li>Guns N' Roses</li>
-        <li>Aerosmith</li>
-        <li>Green Day</li>
-       </ol>
-
+      <!--ARTISTA 1-->
       <div class="contenedor-artistas">
         <div class="artistas">
           <h2>Guns N' Roses</h2>
@@ -42,23 +44,28 @@
 
           <!-- borro el parrafo que tenia "sweetco'm" y introduzco ul type="square"-->
 
-
-
           <ul type="square">
             <li>Sweet Child O' Mine</li>
             <li>November Rain</li>
             <li>Welcome to the Jungle</li>
+          </ul>
+          <p>🎧 Escucha una muestra</p>
+          <audio controls>
+            <source src="audio/Guns_N__Roses_-_Sweet_Child_O__Mine__Official_Music_Video__-_GunsNRosesVEVO_recortado.mp3" type="audio/mpeg"/>
+          </audio>
           <a
             href="https://www.youtube.com/watch?v=1w7OgIMMRc4"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ver en YouTube
+          <i class="fab fa-youtube"></i> en YouTube
           </a>
 
           <br />
           <a href="guns.html">Ver biografía</a>
         </div>
+
+        <!--ARTISTA 2-->
 
         <div class="artistas">
           <h2>Aerosmith</h2>
@@ -73,17 +80,23 @@
             <li>Dream On</li>
             <li>Crazy</li>
           </ul>
+          <p>🎧 Escucha una muestra</p>
+          <audio controls>
+            <source src="audio/Aerosmith_-_Crazy__Official_Music_Video__-_AerosmithVEVO_recortado.mp3" type="audio/mpeg"/>
+          </audio>
           <a
             href="https://www.youtube.com/watch?v=HaC0s-FP-r4"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ver en YouTube
+           <i class="fab fa-youtube"></i> Ver en YouTube
           </a>
 
           <br />
           <a href="aerosmith.html">Ver biografia</a>
         </div>
+
+        <!--ARTISTA 3-->
 
         <div class="artistas">
           <h2>Green Day</h2>
@@ -97,23 +110,67 @@
             <li>Boulevard of Broken Dreams</li>
             <li>Wake Me Up When September Ends</li>
             <li>American Idiot</li>
-            </ul>      
+          </ul>
+          <p>🎧 Escucha una muestra</p>
+          <audio controls>
+            <source src="audio/Green_Day_-_Basket_Case__Official_Music_Video___4K_Upgrade__-_Green_Day_recortado.mp3" type="audio/mpeg"/>
+          </audio>
+          <br />
           <a
             href="https://www.youtube.com/watch?v=NUTGr5t3MoY"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Ver en YouTube
+           <i class="fab fa-youtube"></i> Ver en YouTube
           </a>
 
           <br />
           <a href="greenday.html">Ver biografia</a>
         </div>
       </div>
+      <h2>🎬 Video destacado</h2>
+     <video width="600" controls poster="imagenes/gnr.jpeg">
+      <source src="video/Guns_N_Roses_-_You_Could_Be_Mine_comprimido.mp4" type="video/mp4"/>
+     </video>
+      <h2>Discografía destacada</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Artistas</th>
+             <th>Década</th>
+              <th>Álbum</th>
+               <th>Premios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Guns N' Roses</td>
+            <td>1980s</td>
+            <td>Appetite for Destruction</td>
+            <td rowspan="2">1 Grammy</td>
+          </tr>
+          <tr>
+            <td>Aerosmith</td>
+            <td>1990s</td>
+            <td>Get a Grip</td>
+          </tr>
+          <tr>
+            <td>Green Day</td>
+            <td>2000s</td>
+            <td>American Idiot</td>
+            <td>5 Grammys</td>
+          </tr>
+        </tbody>
+      </table>
+
+        </tr>
+      </table>
 
       <!-- CONTACTO -->
+       <footer>
       <h2 id="contacto">Contacto</h2>
-      <p>Email: <u>luiggi.lj@icloud.com</u></p>
+      <p><i class="fas fa-envelope"></i> luiggi.lj@icloud.com</p>
+       </footer>
     </div>
   </body>
 </html>
